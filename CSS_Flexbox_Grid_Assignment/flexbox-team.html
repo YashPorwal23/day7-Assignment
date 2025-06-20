@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meet the Team</title>
+  <style>
+    .team-container {
+      width: 1000px;
+      margin: 50px auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .card {
+      width: 220px;
+      border: 1px solid #ccc;
+      padding: 16px;
+      box-sizing: border-box;
+      text-align: center;
+      transition: box-shadow 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="team-container">
+    <div class="card">
+      <img src="https://picsum.photos/150?random=1" alt="Team Member">
+      <h3>John Doe</h3>
+      <p>Frontend Developer</p>
+      <p>Passionate about UI/UX and building clean interfaces.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/150?random=2" alt="Team Member">
+      <h3>Jane Smith</h3>
+      <p>Backend Developer</p>
+      <p>Enjoys building scalable APIs and databases.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/150?random=3" alt="Team Member">
+      <h3>Mike Brown</h3>
+      <p>UI Designer</p>
+      <p>Loves crafting pixel-perfect visuals and smooth UX.</p>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/150?random=4" alt="Team Member">
+      <h3>Lisa White</h3>
+      <p>Project Manager</p>
+      <p>Keeps the team on track with agile methodologies.</p>
+    </div>
+  </div>
+</body>
+</html>
