@@ -1,0 +1,51 @@
+.container { 
+    background-color: #e2e2e2;
+    padding: 10px;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+        "header header header header"
+        "sidebar content content content"
+        "footer footer footer footer";
+}
+
+.item {
+    background-color: tomato;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item1 { 
+    grid-area: header;
+    background-image: url('https://via.placeholder.com/800x100?text=Header');
+    background-size: cover;
+    background-position: center;
+}
+
+.item2 { 
+    grid-area: content;
+    background-image: url('https://via.placeholder.com/600x400?text=Content');
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 { 
+    grid-area: sidebar;
+    background-image: url('https://via.placeholder.com/200x400?text=Sidebar');
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 { 
+    grid-area: footer;
+    background-image: url('https://via.placeholder.com/800x100?text=Footer');
+    background-size: cover;
+    background-position: center;
+}
